@@ -1,6 +1,9 @@
 # Alexey Samoylov
 
 [Русский](README.md) · English
+[![CI](https://github.com/tr0llex/tr0llex/actions/workflows/ci.yml/badge.svg)](https://github.com/tr0llex/tr0llex/actions/workflows/ci.yml)
+[![prod](https://img.shields.io/website?url=https%3A%2F%2Fsamoy.love&up_message=online&up_color=2ea043&down_message=offline&label=samoy.love)](https://samoy.love)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Five sites, one server, one pipeline. Everything below runs in production
 under `samoy.love` — the domain reads as my last name — and ships through the
