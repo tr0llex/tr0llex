@@ -31,7 +31,7 @@ jobs:
     name: Коммиты без упоминаний ИИ
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
@@ -61,7 +61,7 @@ jobs:
     name: Ссылки внутри репозитория
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       - name: Проверить, что все относительные ссылки существуют
         run: |
