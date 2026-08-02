@@ -1,87 +1,87 @@
-# Alexey Samoylov
+# Алексей Самойлов
 
-English · [Русский](README.ru.md)
+Русский · [English](README.en.md)
 
-Five sites, one server, one pipeline. Everything below runs in production
-under `samoy.love` — the domain reads as my last name — and ships through the
-same release path, with a public status page as the proof.
+Пять сайтов, один сервер, один пайплайн. Всё ниже работает в проде на
+домене `samoy.love` — он читается как фамилия — и катится одним релизным
+путём, с публичной статус-страницей как доказательством.
 
 [alex@samoy.love](mailto:alex@samoy.love) · [samoy.love](https://samoy.love) · [t.me/tr0llex](https://t.me/tr0llex) · [status.samoy.love](https://status.samoy.love)
 
-## Products
+## Продукты
 
 ### samoy.love
 
-[samoy.love](https://samoy.love) · [source](https://github.com/tr0llex/samoy.love)
+[samoy.love](https://samoy.love) · [исходники](https://github.com/tr0llex/samoy.love)
 
-The front door: who I am and what runs here. A WebGL background, a static
-build served straight from nginx, not a single third-party tracker.
+Парадный вход: кто я и что тут работает. 3D-фон на WebGL, статическая сборка
+отдаётся прямо из nginx, ни одного стороннего трекера.
 
 `Astro` `TypeScript` `WebGL`
 
 ### ChillHub
 
-[launcher.samoy.love](https://launcher.samoy.love) · [source](https://github.com/tr0llex/chillhub)
+[launcher.samoy.love](https://launcher.samoy.love) · [исходники](https://github.com/tr0llex/chillhub)
 
-A game launcher for Windows. Updates are diffed — only changed files travel,
-integrity is verified by hash. Own admin panel and build-distribution server.
+Лаунчер игр для Windows. Обновления по диффу: качаются только изменившиеся
+файлы, целостность проверяется хешами. Своя админка и сервер раздачи сборок.
 
 `C#` `WPF` `Go`
 
 ### Snakes
 
-[snakes.samoy.love](https://snakes.samoy.love) · [source](https://github.com/tr0llex/snakes)
+[snakes.samoy.love](https://snakes.samoy.love) · [исходники](https://github.com/tr0llex/snakes)
 
-Territory capture for sixteen players. A binary protocol over 21 event types,
-bots with real AI, five minutes per match.
+Захват территории на шестнадцать игроков. Бинарный протокол на 21 тип событий,
+боты с полноценным ИИ, матч длится пять минут.
 
 `Go` `WebSocket` `Canvas`
 
-### Metro
+### Метро
 
-[metro.samoy.love](https://metro.samoy.love) · [source](https://github.com/tr0llex/metro-map)
+[metro.samoy.love](https://metro.samoy.love) · [исходники](https://github.com/tr0llex/metro-map)
 
-The Moscow metro map, working offline. Routes are solved on the client; the
-map layout is produced by a custom solver written in Go.
+Схема московского метро, работает без сети. Маршруты считаются на клиенте,
+раскладку схемы строит собственный решатель на Go.
 
 `React` `TypeScript` `PWA`
 
-## Infrastructure
+## Инфраструктура
 
-The part that makes all of the above one system rather than a pile of side
-projects: one release path, one status page, one set of `/healthz` and
-`/version.json` contracts.
+То, что делает из всего перечисленного выше одну систему, а не россыпь
+пет-проектов: один релизный путь, одна статус-страница, общие контракты
+`/healthz` и `/version.json`.
 
 ### deploy-kit
 
-[source](https://github.com/tr0llex/deploy-kit)
+[исходники](https://github.com/tr0llex/deploy-kit)
 
-The shared release pipeline for everything above. Atomic releases via symlink,
-automatic rollback on healthcheck, version verified after the switch — a green
-deploy serving old files is not possible.
+Общий релизный пайплайн для всего остального. Атомарные релизы через симлинк,
+автооткат по healthcheck, сверка версии после выкатки — «зелёный деплой со
+старыми файлами» невозможен.
 
 `Bash` `GitHub Actions` `systemd`
 
 ### status
 
-[status.samoy.love](https://status.samoy.love) · [source](https://github.com/tr0llex/status.samoy.love)
+[status.samoy.love](https://status.samoy.love) · [исходники](https://github.com/tr0llex/status.samoy.love)
 
-Uptime, versions and incidents for every service. An agent on the server plus
-an external watchdog that outlives the host going down.
+Аптайм, версии и инциденты всех сервисов. Агент на сервере плюс внешний
+сторож, который переживает падение самого хоста.
 
 `Go` `Astro`
 
 ### metrics
 
-[source](https://github.com/tr0llex/metrics.samoy.love)
+[исходники](https://github.com/tr0llex/metrics.samoy.love)
 
-Prometheus and Grafana for everything above, image versions pinned; both bind
-to localhost and the only way in is nginx with basic auth. Traffic is counted
-from a separate nginx log that records neither IP nor User-Agent — analytics
-without a client-side tracker.
+Prometheus и Grafana для всего перечисленного выше, версии образов закреплены;
+оба слушают localhost, снаружи — только nginx с basic auth. Посещаемость
+считается из отдельного журнала nginx, в котором нет ни IP, ни User-Agent —
+аналитика без клиентского трекера.
 
 `Prometheus` `Grafana` `Docker`
 
 ---
 
-<sub>Live versions and uptime: <a href="https://status.samoy.love">status.samoy.love</a></sub>
+<sub>Живые версии и аптайм: <a href="https://status.samoy.love">status.samoy.love</a></sub>
