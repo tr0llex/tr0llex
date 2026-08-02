@@ -2,13 +2,22 @@
 
 [English](README.md) · Русский
 
-Пять сервисов, один сервер, один пайплайн. Всё ниже работает в проде на
+Пять сайтов, один сервер, один пайплайн. Всё ниже работает в проде на
 домене `samoy.love` — он читается как фамилия — и катится одним релизным
 путём, с публичной статус-страницей как доказательством.
 
 [alex@samoy.love](mailto:alex@samoy.love) · [samoy.love](https://samoy.love) · [t.me/tr0llex](https://t.me/tr0llex) · [status.samoy.love](https://status.samoy.love)
 
 ## Продукты
+
+### samoy.love
+
+[samoy.love](https://samoy.love) · [исходники](https://github.com/tr0llex/samoy.love)
+
+Парадный вход: кто я и что тут работает. 3D-фон на WebGL, статическая сборка
+отдаётся прямо из nginx, ни одного стороннего трекера.
+
+`Astro` `TypeScript` `WebGL`
 
 ### ChillHub
 
@@ -66,9 +75,10 @@
 
 [исходники](https://github.com/tr0llex/metrics.samoy.love)
 
-Prometheus и Grafana для всего перечисленного выше, версии образов закреплены,
-наружу не смотрит ни один порт. Посещаемость считается из отдельного журнала
-nginx, в котором нет ни IP, ни User-Agent — аналитика без клиентского трекера.
+Prometheus и Grafana для всего перечисленного выше, версии образов закреплены;
+оба слушают localhost, снаружи — только nginx с basic auth. Посещаемость
+считается из отдельного журнала nginx, в котором нет ни IP, ни User-Agent —
+аналитика без клиентского трекера.
 
 `Prometheus` `Grafana` `Docker`
 
