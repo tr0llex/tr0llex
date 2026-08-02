@@ -2,13 +2,22 @@
 
 English · [Русский](README.ru.md)
 
-Five services, one server, one pipeline. Everything below runs in production
+Five sites, one server, one pipeline. Everything below runs in production
 under `samoy.love` — the domain reads as my last name — and ships through the
 same release path, with a public status page as the proof.
 
 [alex@samoy.love](mailto:alex@samoy.love) · [samoy.love](https://samoy.love) · [t.me/tr0llex](https://t.me/tr0llex) · [status.samoy.love](https://status.samoy.love)
 
 ## Products
+
+### samoy.love
+
+[samoy.love](https://samoy.love) · [source](https://github.com/tr0llex/samoy.love)
+
+The front door: who I am and what runs here. A WebGL background, a static
+build served straight from nginx, not a single third-party tracker.
+
+`Astro` `TypeScript` `WebGL`
 
 ### ChillHub
 
@@ -66,9 +75,10 @@ an external watchdog that outlives the host going down.
 
 [source](https://github.com/tr0llex/metrics.samoy.love)
 
-Prometheus and Grafana for everything above, image versions pinned, nothing
-listening beyond localhost. Traffic is counted from a separate nginx log that
-records neither IP nor User-Agent — analytics without a client-side tracker.
+Prometheus and Grafana for everything above, image versions pinned; both bind
+to localhost and the only way in is nginx with basic auth. Traffic is counted
+from a separate nginx log that records neither IP nor User-Agent — analytics
+without a client-side tracker.
 
 `Prometheus` `Grafana` `Docker`
 
