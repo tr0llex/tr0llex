@@ -1,9 +1,8 @@
 # Алексей Самойлов
 
 Русский · [English](README.en.md)
-[![CI](https://github.com/tr0llex/tr0llex/actions/workflows/ci.yml/badge.svg)](https://github.com/tr0llex/tr0llex/actions/workflows/ci.yml)
+
 [![прод](https://img.shields.io/website?url=https%3A%2F%2Fsamoy.love&up_message=online&up_color=2ea043&down_message=offline&label=samoy.love)](https://samoy.love)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Пять сайтов, один сервер, один пайплайн. Всё ниже работает в проде на
 домене `samoy.love` — он читается как фамилия — и катится одним релизным
