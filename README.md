@@ -17,7 +17,7 @@ same release path, with a public status page as the proof.
 A game launcher for Windows. Updates are diffed — only changed files travel,
 integrity is verified by hash. Own admin panel and build-distribution server.
 
-`Go` `WPF` `nginx`
+`C#` `WPF` `Go`
 
 ### Snakes
 
