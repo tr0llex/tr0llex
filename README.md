@@ -1,6 +1,6 @@
-English · [Русский](README.ru.md)
-
 # Alexey Samoylov
+
+English · [Русский](README.ru.md)
 
 Five services, one server, one pipeline. Everything below runs in production
 under `samoy.love` — the domain reads as my last name — and ships through the
