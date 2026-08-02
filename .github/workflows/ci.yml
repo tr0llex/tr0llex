@@ -66,7 +66,7 @@ jobs:
       - name: Проверить, что все относительные ссылки существуют
         run: |
           fail=0
-          for f in README.md README.ru.md; do
+          for f in README.md README.en.md; do
             grep -oE '\]\(([^)]+)\)|src="([^"]+)"' "$f" \
               | sed -E 's/^\]\(//; s/\)$//; s/^src="//; s/"$//' \
               | grep -vE '^(https?:|mailto:|#)' \
