@@ -75,8 +75,8 @@ jobs:
         run: |
           fail=0
           for f in README.md README.en.md; do
-            grep -oE '\]\(([^)]+)\)|src="([^"]+)"' "$f" \
-              | sed -E 's/^\]\(//; s/\)$//; s/^src="//; s/"$//' \
+            grep -oE '\]\(([^)]+)\)|src="([^"]+)"|href="([^"]+)"' "$f" \
+              | sed -E 's/^\]\(//; s/\)$//; s/^(src|href)="//; s/"$//' \
               | grep -vE '^(https?:|mailto:|#)' \
               | sed 's/#.*//' | grep -v '^$' | sort -u \
               | while read -r target; do
