@@ -6,6 +6,8 @@
 домене `samoy.love` — он читается как фамилия — и катится одним релизным
 путём, с публичной статус-страницей как доказательством.
 
+<img src="assets/og.png" alt="Алексей Самойлов — пять сайтов, один сервер, один пайплайн" width="100%">
+
 [alex@samoy.love](mailto:alex@samoy.love) · [samoy.love](https://samoy.love) · [t.me/tr0llex](https://t.me/tr0llex) · [status.samoy.love](https://status.samoy.love)
 
 ## Продукты

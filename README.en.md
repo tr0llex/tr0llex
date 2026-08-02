@@ -6,6 +6,8 @@ Five sites, one server, one pipeline. Everything below runs in production
 under `samoy.love` — the domain reads as my last name — and ships through the
 same release path, with a public status page as the proof.
 
+<img src="assets/og.png" alt="Alexey Samoylov — five sites, one server, one pipeline" width="100%">
+
 [alex@samoy.love](mailto:alex@samoy.love) · [samoy.love](https://samoy.love) · [t.me/tr0llex](https://t.me/tr0llex) · [status.samoy.love](https://status.samoy.love)
 
 ## Products
