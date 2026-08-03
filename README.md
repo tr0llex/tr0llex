@@ -26,52 +26,44 @@
 <tr>
 <td width="50%" valign="top">
 
-<h3><a href="https://samoy.love">samoy.love</a></h3>
+<h3><a href="https://samoy.love">samoy.love</a> <sub><a href="https://github.com/tr0llex/samoy.love">исходники</a></sub></h3>
+
+<code>Astro</code> <code>TypeScript</code> <code>WebGL</code>
 
 Парадный вход: кто я и что тут работает. 3D-фон на WebGL, статика прямо из
 nginx, ни одного стороннего трекера.
 
-<code>Astro</code> <code>TypeScript</code> <code>WebGL</code>
-
-<sub><a href="https://samoy.love">сайт</a> · <a href="https://github.com/tr0llex/samoy.love">исходники</a></sub>
-
 </td>
 <td width="50%" valign="top">
 
-<h3><a href="https://launcher.samoy.love">ChillHub</a></h3>
-
-Лаунчер игр для Windows. Обновления по диффу, целостность по хешам, своя
-админка и сервер раздачи сборок.
+<h3><a href="https://launcher.samoy.love">ChillHub</a> <sub><a href="https://github.com/tr0llex/chillhub">исходники</a></sub></h3>
 
 <code>C#</code> <code>WPF</code> <code>Go</code>
 
-<sub><a href="https://launcher.samoy.love">сайт</a> · <a href="https://github.com/tr0llex/chillhub">исходники</a></sub>
+Лаунчер игр для Windows. Обновления по диффу, целостность по хешам, своя
+админка и сервер раздачи сборок.
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-<h3><a href="https://snakes.samoy.love">Snakes</a></h3>
+<h3><a href="https://snakes.samoy.love">Snakes</a> <sub><a href="https://github.com/tr0llex/snakes">исходники</a></sub></h3>
+
+<code>Go</code> <code>WebSocket</code> <code>Canvas</code>
 
 Захват территории на шестнадцать игроков. Бинарный протокол на 21 тип
 событий, боты с полноценным ИИ, матч на пять минут.
 
-<code>Go</code> <code>WebSocket</code> <code>Canvas</code>
-
-<sub><a href="https://snakes.samoy.love">сайт</a> · <a href="https://github.com/tr0llex/snakes">исходники</a></sub>
-
 </td>
 <td width="50%" valign="top">
 
-<h3><a href="https://metro.samoy.love">Метро</a></h3>
-
-Схема московского метро без сети. Маршруты считаются на клиенте, раскладку
-строит собственный решатель на Go.
+<h3><a href="https://metro.samoy.love">Метро</a> <sub><a href="https://github.com/tr0llex/metro-map">исходники</a></sub></h3>
 
 <code>React</code> <code>TypeScript</code> <code>PWA</code>
 
-<sub><a href="https://metro.samoy.love">сайт</a> · <a href="https://github.com/tr0llex/metro-map">исходники</a></sub>
+Схема московского метро без сети. Маршруты считаются на клиенте, раскладку
+строит собственный решатель на Go.
 
 </td>
 </tr>
@@ -90,36 +82,30 @@ nginx, ни одного стороннего трекера.
 
 <h3><a href="https://github.com/tr0llex/deploy-kit">deploy-kit</a></h3>
 
-Общий релизный путь. Атомарные релизы через симлинк, откат по healthcheck
-и сверка версии после выкатки.
-
 <code>Bash</code> <code>GitHub Actions</code> <code>systemd</code>
 
-<sub><a href="https://github.com/tr0llex/deploy-kit">исходники</a></sub>
+Общий релизный путь. Атомарные релизы через симлинк, откат по healthcheck
+и сверка версии после выкатки.
 
 </td>
 <td width="33%" valign="top">
 
-<h3><a href="https://status.samoy.love">status</a></h3>
-
-Аптайм, версии и инциденты всех сервисов. Агент на сервере плюс внешний
-сторож, который переживает падение хоста.
+<h3><a href="https://status.samoy.love">status</a> <sub><a href="https://github.com/tr0llex/status.samoy.love">исходники</a></sub></h3>
 
 <code>Go</code> <code>Astro</code>
 
-<sub><a href="https://status.samoy.love">сайт</a> · <a href="https://github.com/tr0llex/status.samoy.love">исходники</a></sub>
+Аптайм, версии и инциденты всех сервисов. Агент на сервере плюс внешний
+сторож, который переживает падение хоста.
 
 </td>
 <td width="33%" valign="top">
 
 <h3><a href="https://github.com/tr0llex/metrics.samoy.love">metrics</a></h3>
 
-Prometheus и Grafana на localhost, снаружи nginx с basic auth. Аналитика
-из журнала, без клиентского трекера.
-
 <code>Prometheus</code> <code>Grafana</code> <code>Docker</code>
 
-<sub><a href="https://github.com/tr0llex/metrics.samoy.love">исходники</a></sub>
+Prometheus и Grafana на localhost, снаружи nginx с basic auth. Аналитика
+из журнала, без клиентского трекера.
 
 </td>
 </tr>
