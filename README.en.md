@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Five sites, one server, one pipeline.<br>
+  <b>Five sites, one server, one pipeline.</b><br>
   Everything below runs in production under <code>samoy.love</code> — the domain reads as my last name.
 </p>
 
@@ -20,28 +20,110 @@
   <a href="https://status.samoy.love">status.samoy.love</a>
 </p>
 
-## Products
+<h2 align="center">Products</h2>
 
-| Project | What it is | Stack |
-| --- | --- | --- |
-| **[samoy.love](https://samoy.love)**<br>[source](https://github.com/tr0llex/samoy.love) | The front door: who I am and what runs here. A WebGL background, static build served straight from nginx, not a single third-party tracker. | `Astro` `TypeScript` `WebGL` |
-| **[ChillHub](https://launcher.samoy.love)**<br>[source](https://github.com/tr0llex/chillhub) | A game launcher for Windows. Diffed updates, hash-verified integrity, own admin panel and build-distribution server. | `C#` `WPF` `Go` |
-| **[Snakes](https://snakes.samoy.love)**<br>[source](https://github.com/tr0llex/snakes) | Territory capture for sixteen players. A binary protocol over 21 event types, bots with real AI, five minutes per match. | `Go` `WebSocket` `Canvas` |
-| **[Metro](https://metro.samoy.love)**<br>[source](https://github.com/tr0llex/metro-map) | The Moscow metro map, working offline. Routes are solved on the client; the layout comes from a custom solver written in Go. | `React` `TypeScript` `PWA` |
+<table>
+<tr>
+<td width="50%" valign="top">
 
-## Infrastructure
+<h3><a href="https://samoy.love">samoy.love</a></h3>
 
-The part that makes all of the above one system rather than a pile of side
-projects: one release path, one status page, one set of `/healthz` and
-`/version.json` contracts.
+The front door: who I am and what runs here. A WebGL background, a static
+build served straight from nginx, not a single third-party tracker.
 
-| Project | What it is | Stack |
-| --- | --- | --- |
-| **[deploy-kit](https://github.com/tr0llex/deploy-kit)** | The shared release pipeline. Atomic releases via symlink, automatic rollback on healthcheck, version verified after the switch — a green deploy serving old files is not possible. | `Bash` `GitHub Actions` `systemd` |
-| **[status](https://status.samoy.love)**<br>[source](https://github.com/tr0llex/status.samoy.love) | Uptime, versions and incidents for every service. An agent on the server plus an external watchdog that outlives the host going down. | `Go` `Astro` |
-| **[metrics](https://github.com/tr0llex/metrics.samoy.love)** | Prometheus and Grafana, both bound to localhost, the only way in is nginx with basic auth. Traffic is counted from a log with neither IP nor User-Agent: analytics without a client-side tracker. | `Prometheus` `Grafana` `Docker` |
+<code>Astro</code> <code>TypeScript</code> <code>WebGL</code>
 
----
+<sub><a href="https://github.com/tr0llex/samoy.love">source →</a></sub>
+
+</td>
+<td width="50%" valign="top">
+
+<h3><a href="https://launcher.samoy.love">ChillHub</a></h3>
+
+A game launcher for Windows. Diffed updates, hash-verified integrity, own
+admin panel and build-distribution server.
+
+<code>C#</code> <code>WPF</code> <code>Go</code>
+
+<sub><a href="https://github.com/tr0llex/chillhub">source →</a></sub>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3><a href="https://snakes.samoy.love">Snakes</a></h3>
+
+Territory capture for sixteen players. A binary protocol over 21 event types,
+bots with real AI, five minutes per match.
+
+<code>Go</code> <code>WebSocket</code> <code>Canvas</code>
+
+<sub><a href="https://github.com/tr0llex/snakes">source →</a></sub>
+
+</td>
+<td width="50%" valign="top">
+
+<h3><a href="https://metro.samoy.love">Metro</a></h3>
+
+The Moscow metro map, working offline. Routes are solved on the client, the
+layout comes from a custom solver written in Go.
+
+<code>React</code> <code>TypeScript</code> <code>PWA</code>
+
+<sub><a href="https://github.com/tr0llex/metro-map">source →</a></sub>
+
+</td>
+</tr>
+</table>
+
+<h2 align="center">Infrastructure</h2>
+
+<p align="center">
+  The part that makes all of the above one system rather than a pile of side projects:<br>
+  one release path, one status page, one set of <code>/healthz</code> and <code>/version.json</code> contracts.
+</p>
+
+<table>
+<tr>
+<td colspan="2" valign="top">
+
+<h3><a href="https://github.com/tr0llex/deploy-kit">deploy-kit</a></h3>
+
+The shared release pipeline for everything above. Atomic releases via symlink,
+automatic rollback on healthcheck, version verified after the switch — a green
+deploy serving old files is not possible.
+
+<code>Bash</code> <code>GitHub Actions</code> <code>systemd</code>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3><a href="https://status.samoy.love">status</a></h3>
+
+Uptime, versions and incidents for every service. An agent on the server plus
+an external watchdog that outlives the host going down.
+
+<code>Go</code> <code>Astro</code>
+
+<sub><a href="https://github.com/tr0llex/status.samoy.love">source →</a></sub>
+
+</td>
+<td width="50%" valign="top">
+
+<h3><a href="https://github.com/tr0llex/metrics.samoy.love">metrics</a></h3>
+
+Prometheus and Grafana bound to localhost, the only way in is nginx with basic
+auth. Traffic is counted from a log with neither IP nor User-Agent: analytics
+without a client-side tracker.
+
+<code>Prometheus</code> <code>Grafana</code> <code>Docker</code>
+
+</td>
+</tr>
+</table>
 
 <p align="center">
   <sub>Live versions and uptime: <a href="https://status.samoy.love">status.samoy.love</a></sub>

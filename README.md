@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Пять сайтов, один сервер, один пайплайн.<br>
+  <b>Пять сайтов, один сервер, один пайплайн.</b><br>
   Всё ниже работает в проде на домене <code>samoy.love</code> — он читается как фамилия.
 </p>
 
@@ -20,28 +20,109 @@
   <a href="https://status.samoy.love">status.samoy.love</a>
 </p>
 
-## Продукты
+<h2 align="center">Продукты</h2>
 
-| Проект | Что это | Стек |
-| --- | --- | --- |
-| **[samoy.love](https://samoy.love)**<br>[исходники](https://github.com/tr0llex/samoy.love) | Парадный вход: кто я и что тут работает. 3D-фон на WebGL, статика прямо из nginx, ни одного стороннего трекера. | `Astro` `TypeScript` `WebGL` |
-| **[ChillHub](https://launcher.samoy.love)**<br>[исходники](https://github.com/tr0llex/chillhub) | Лаунчер игр для Windows. Обновления по диффу, целостность по хешам, своя админка и сервер раздачи сборок. | `C#` `WPF` `Go` |
-| **[Snakes](https://snakes.samoy.love)**<br>[исходники](https://github.com/tr0llex/snakes) | Захват территории на шестнадцать игроков. Бинарный протокол на 21 тип событий, боты с полноценным ИИ, матч на пять минут. | `Go` `WebSocket` `Canvas` |
-| **[Метро](https://metro.samoy.love)**<br>[исходники](https://github.com/tr0llex/metro-map) | Схема московского метро без сети. Маршруты считаются на клиенте, раскладку строит собственный решатель на Go. | `React` `TypeScript` `PWA` |
+<table>
+<tr>
+<td width="50%" valign="top">
 
-## Инфраструктура
+<h3><a href="https://samoy.love">samoy.love</a></h3>
 
-То, что делает из перечисленного выше одну систему, а не россыпь пет-проектов:
-один релизный путь, одна статус-страница, общие контракты `/healthz` и
-`/version.json`.
+Парадный вход: кто я и что тут работает. 3D-фон на WebGL, статика прямо из
+nginx, ни одного стороннего трекера.
 
-| Проект | Что это | Стек |
-| --- | --- | --- |
-| **[deploy-kit](https://github.com/tr0llex/deploy-kit)** | Общий релизный пайплайн. Атомарные релизы через симлинк, автооткат по healthcheck, сверка версии после выкатки — «зелёный деплой со старыми файлами» невозможен. | `Bash` `GitHub Actions` `systemd` |
-| **[status](https://status.samoy.love)**<br>[исходники](https://github.com/tr0llex/status.samoy.love) | Аптайм, версии и инциденты всех сервисов. Агент на сервере плюс внешний сторож, который переживает падение хоста. | `Go` `Astro` |
-| **[metrics](https://github.com/tr0llex/metrics.samoy.love)** | Prometheus и Grafana, оба на localhost, снаружи — nginx с basic auth. Посещаемость считается из журнала без IP и User-Agent: аналитика без клиентского трекера. | `Prometheus` `Grafana` `Docker` |
+<code>Astro</code> <code>TypeScript</code> <code>WebGL</code>
 
----
+<sub><a href="https://github.com/tr0llex/samoy.love">исходники →</a></sub>
+
+</td>
+<td width="50%" valign="top">
+
+<h3><a href="https://launcher.samoy.love">ChillHub</a></h3>
+
+Лаунчер игр для Windows. Обновления по диффу, целостность по хешам, своя
+админка и сервер раздачи сборок.
+
+<code>C#</code> <code>WPF</code> <code>Go</code>
+
+<sub><a href="https://github.com/tr0llex/chillhub">исходники →</a></sub>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3><a href="https://snakes.samoy.love">Snakes</a></h3>
+
+Захват территории на шестнадцать игроков. Бинарный протокол на 21 тип
+событий, боты с полноценным ИИ, матч на пять минут.
+
+<code>Go</code> <code>WebSocket</code> <code>Canvas</code>
+
+<sub><a href="https://github.com/tr0llex/snakes">исходники →</a></sub>
+
+</td>
+<td width="50%" valign="top">
+
+<h3><a href="https://metro.samoy.love">Метро</a></h3>
+
+Схема московского метро без сети. Маршруты считаются на клиенте, раскладку
+строит собственный решатель на Go.
+
+<code>React</code> <code>TypeScript</code> <code>PWA</code>
+
+<sub><a href="https://github.com/tr0llex/metro-map">исходники →</a></sub>
+
+</td>
+</tr>
+</table>
+
+<h2 align="center">Инфраструктура</h2>
+
+<p align="center">
+  То, что делает из перечисленного выше одну систему, а не россыпь пет-проектов:<br>
+  один релизный путь, одна статус-страница, общие контракты <code>/healthz</code> и <code>/version.json</code>.
+</p>
+
+<table>
+<tr>
+<td colspan="2" valign="top">
+
+<h3><a href="https://github.com/tr0llex/deploy-kit">deploy-kit</a></h3>
+
+Общий релизный пайплайн для всего перечисленного выше. Атомарные релизы через
+симлинк, автооткат по healthcheck, сверка версии после выкатки — «зелёный
+деплой со старыми файлами» невозможен.
+
+<code>Bash</code> <code>GitHub Actions</code> <code>systemd</code>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3><a href="https://status.samoy.love">status</a></h3>
+
+Аптайм, версии и инциденты всех сервисов. Агент на сервере плюс внешний
+сторож, который переживает падение хоста.
+
+<code>Go</code> <code>Astro</code>
+
+<sub><a href="https://github.com/tr0llex/status.samoy.love">исходники →</a></sub>
+
+</td>
+<td width="50%" valign="top">
+
+<h3><a href="https://github.com/tr0llex/metrics.samoy.love">metrics</a></h3>
+
+Prometheus и Grafana на localhost, снаружи — nginx с basic auth. Посещаемость
+считается из журнала без IP и User-Agent: аналитика без клиентского трекера.
+
+<code>Prometheus</code> <code>Grafana</code> <code>Docker</code>
+
+</td>
+</tr>
+</table>
 
 <p align="center">
   <sub>Живые версии и аптайм: <a href="https://status.samoy.love">status.samoy.love</a></sub>
