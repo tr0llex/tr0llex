@@ -91,7 +91,7 @@ layout comes from a custom solver written in Go.
 <h3><a href="https://github.com/tr0llex/deploy-kit">deploy-kit</a></h3>
 
 The shared release path. Atomic releases via symlink, rollback on
-healthcheck, version verified after the switch.
+healthcheck, version checked after.
 
 <code>Bash</code> <code>GitHub Actions</code> <code>systemd</code>
 
@@ -102,8 +102,8 @@ healthcheck, version verified after the switch.
 
 <h3><a href="https://status.samoy.love">status</a></h3>
 
-Uptime, versions and incidents for every service. An agent on the server plus
-an external watchdog that outlives the host.
+Uptime, versions and incidents for every service. An agent on the server
+plus an external watchdog.
 
 <code>Go</code> <code>Astro</code>
 
@@ -114,8 +114,8 @@ an external watchdog that outlives the host.
 
 <h3><a href="https://github.com/tr0llex/metrics.samoy.love">metrics</a></h3>
 
-Prometheus and Grafana bound to localhost, nginx with basic auth in front.
-Analytics from a log, without a client-side tracker.
+Prometheus and Grafana on localhost, nginx with basic auth in front.
+Analytics from a log, no tracker.
 
 <code>Prometheus</code> <code>Grafana</code> <code>Docker</code>
 

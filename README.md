@@ -90,8 +90,8 @@ nginx, ни одного стороннего трекера.
 
 <h3><a href="https://github.com/tr0llex/deploy-kit">deploy-kit</a></h3>
 
-Общий релизный путь. Атомарные релизы через симлинк, автооткат по
-healthcheck, сверка версии после выкатки.
+Общий релизный путь. Атомарные релизы через симлинк, откат по healthcheck
+и сверка версии после выкатки.
 
 <code>Bash</code> <code>GitHub Actions</code> <code>systemd</code>
 
