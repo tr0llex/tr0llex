@@ -33,7 +33,7 @@ build served straight from nginx, not a single third-party tracker.
 
 <code>Astro</code> <code>TypeScript</code> <code>WebGL</code>
 
-<sub><a href="https://github.com/tr0llex/samoy.love">source →</a></sub>
+<sub><a href="https://samoy.love">site</a> · <a href="https://github.com/tr0llex/samoy.love">source</a></sub>
 
 </td>
 <td width="50%" valign="top">
@@ -45,7 +45,7 @@ admin panel and build-distribution server.
 
 <code>C#</code> <code>WPF</code> <code>Go</code>
 
-<sub><a href="https://github.com/tr0llex/chillhub">source →</a></sub>
+<sub><a href="https://launcher.samoy.love">site</a> · <a href="https://github.com/tr0llex/chillhub">source</a></sub>
 
 </td>
 </tr>
@@ -59,7 +59,7 @@ bots with real AI, five minutes per match.
 
 <code>Go</code> <code>WebSocket</code> <code>Canvas</code>
 
-<sub><a href="https://github.com/tr0llex/snakes">source →</a></sub>
+<sub><a href="https://snakes.samoy.love">site</a> · <a href="https://github.com/tr0llex/snakes">source</a></sub>
 
 </td>
 <td width="50%" valign="top">
@@ -71,7 +71,7 @@ layout comes from a custom solver written in Go.
 
 <code>React</code> <code>TypeScript</code> <code>PWA</code>
 
-<sub><a href="https://github.com/tr0llex/metro-map">source →</a></sub>
+<sub><a href="https://metro.samoy.love">site</a> · <a href="https://github.com/tr0llex/metro-map">source</a></sub>
 
 </td>
 </tr>
@@ -86,40 +86,40 @@ layout comes from a custom solver written in Go.
 
 <table>
 <tr>
-<td colspan="2" valign="top">
+<td width="33%" valign="top">
 
 <h3><a href="https://github.com/tr0llex/deploy-kit">deploy-kit</a></h3>
 
-The shared release pipeline for everything above. Atomic releases via symlink,
-automatic rollback on healthcheck, version verified after the switch — a green
-deploy serving old files is not possible.
+The shared release path. Atomic releases via symlink, rollback on
+healthcheck, version verified after the switch.
 
 <code>Bash</code> <code>GitHub Actions</code> <code>systemd</code>
 
+<sub><a href="https://github.com/tr0llex/deploy-kit">source</a></sub>
+
 </td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 <h3><a href="https://status.samoy.love">status</a></h3>
 
 Uptime, versions and incidents for every service. An agent on the server plus
-an external watchdog that outlives the host going down.
+an external watchdog that outlives the host.
 
 <code>Go</code> <code>Astro</code>
 
-<sub><a href="https://github.com/tr0llex/status.samoy.love">source →</a></sub>
+<sub><a href="https://status.samoy.love">site</a> · <a href="https://github.com/tr0llex/status.samoy.love">source</a></sub>
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 <h3><a href="https://github.com/tr0llex/metrics.samoy.love">metrics</a></h3>
 
-Prometheus and Grafana bound to localhost, the only way in is nginx with basic
-auth. Traffic is counted from a log with neither IP nor User-Agent: analytics
-without a client-side tracker.
+Prometheus and Grafana bound to localhost, nginx with basic auth in front.
+Analytics from a log, without a client-side tracker.
 
 <code>Prometheus</code> <code>Grafana</code> <code>Docker</code>
+
+<sub><a href="https://github.com/tr0llex/metrics.samoy.love">source</a></sub>
 
 </td>
 </tr>

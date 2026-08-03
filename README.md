@@ -33,7 +33,7 @@ nginx, ни одного стороннего трекера.
 
 <code>Astro</code> <code>TypeScript</code> <code>WebGL</code>
 
-<sub><a href="https://github.com/tr0llex/samoy.love">исходники →</a></sub>
+<sub><a href="https://samoy.love">сайт</a> · <a href="https://github.com/tr0llex/samoy.love">исходники</a></sub>
 
 </td>
 <td width="50%" valign="top">
@@ -45,7 +45,7 @@ nginx, ни одного стороннего трекера.
 
 <code>C#</code> <code>WPF</code> <code>Go</code>
 
-<sub><a href="https://github.com/tr0llex/chillhub">исходники →</a></sub>
+<sub><a href="https://launcher.samoy.love">сайт</a> · <a href="https://github.com/tr0llex/chillhub">исходники</a></sub>
 
 </td>
 </tr>
@@ -59,7 +59,7 @@ nginx, ни одного стороннего трекера.
 
 <code>Go</code> <code>WebSocket</code> <code>Canvas</code>
 
-<sub><a href="https://github.com/tr0llex/snakes">исходники →</a></sub>
+<sub><a href="https://snakes.samoy.love">сайт</a> · <a href="https://github.com/tr0llex/snakes">исходники</a></sub>
 
 </td>
 <td width="50%" valign="top">
@@ -71,7 +71,7 @@ nginx, ни одного стороннего трекера.
 
 <code>React</code> <code>TypeScript</code> <code>PWA</code>
 
-<sub><a href="https://github.com/tr0llex/metro-map">исходники →</a></sub>
+<sub><a href="https://metro.samoy.love">сайт</a> · <a href="https://github.com/tr0llex/metro-map">исходники</a></sub>
 
 </td>
 </tr>
@@ -86,20 +86,19 @@ nginx, ни одного стороннего трекера.
 
 <table>
 <tr>
-<td colspan="2" valign="top">
+<td width="33%" valign="top">
 
 <h3><a href="https://github.com/tr0llex/deploy-kit">deploy-kit</a></h3>
 
-Общий релизный пайплайн для всего перечисленного выше. Атомарные релизы через
-симлинк, автооткат по healthcheck, сверка версии после выкатки — «зелёный
-деплой со старыми файлами» невозможен.
+Общий релизный путь. Атомарные релизы через симлинк, автооткат по
+healthcheck, сверка версии после выкатки.
 
 <code>Bash</code> <code>GitHub Actions</code> <code>systemd</code>
 
+<sub><a href="https://github.com/tr0llex/deploy-kit">исходники</a></sub>
+
 </td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 <h3><a href="https://status.samoy.love">status</a></h3>
 
@@ -108,17 +107,19 @@ nginx, ни одного стороннего трекера.
 
 <code>Go</code> <code>Astro</code>
 
-<sub><a href="https://github.com/tr0llex/status.samoy.love">исходники →</a></sub>
+<sub><a href="https://status.samoy.love">сайт</a> · <a href="https://github.com/tr0llex/status.samoy.love">исходники</a></sub>
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 <h3><a href="https://github.com/tr0llex/metrics.samoy.love">metrics</a></h3>
 
-Prometheus и Grafana на localhost, снаружи — nginx с basic auth. Посещаемость
-считается из журнала без IP и User-Agent: аналитика без клиентского трекера.
+Prometheus и Grafana на localhost, снаружи nginx с basic auth. Аналитика
+из журнала, без клиентского трекера.
 
 <code>Prometheus</code> <code>Grafana</code> <code>Docker</code>
+
+<sub><a href="https://github.com/tr0llex/metrics.samoy.love">исходники</a></sub>
 
 </td>
 </tr>
